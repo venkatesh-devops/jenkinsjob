@@ -1,5 +1,6 @@
 #!/bin/bash
-sudo apt-get update && sudo apt-get install -y apt-transport-https
+sudo apt-get update  
+sudo apt-get install -y apt-transport-https
 sudo apt-get install curl -y
 curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 sudo touch /etc/apt/sources.list.d/kubernetes.list
